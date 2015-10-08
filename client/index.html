@@ -1,0 +1,38 @@
+<head>
+  <base href="/">
+</head>
+
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '698317916936912',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  <div ng-app="socially">
+    <blaze-template name="loginButtons"></blaze-template>
+    <h1>
+      <a href="/parties">Home</a>
+    </h1>
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
+
+    <div ui-view></div>
+
+  </div>
+</body>

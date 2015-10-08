@@ -5,7 +5,7 @@
     <input type="text" ng-model="newParty.name">
     <label for="">Description</label>
     <input type="text" ng-model="newParty.description">
-    <button ng-click="parties.save(newParty); newParty='';">Add</button>
+    <button ng-click="newParty.owner=$root.currentUser._id; parties.push(newParty); newParty='';">Add</button>
     <button ng-click="removeAll();">Remove all Parties</button>
   </form>
   <ul>
