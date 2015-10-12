@@ -24,3 +24,5 @@ urigo:angular-blaze-template
 accounts-password
 accounts-facebook
 accounts-twitter
+angularutils:pagination
+tmeasday:publish-counts
